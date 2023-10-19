@@ -1,0 +1,15 @@
+{
+  "generator-ui5-app": {
+    "namespace": "single.teststack",
+    "framework": "OpenUI5",
+    "frameworkVersion": "1.119.1",
+    "author": "Volker Buzek <volker.buzek@js-soft.com>",
+    "initrepo": true,
+    "appId": "single.teststack",
+    "appURI": "single/teststack",
+    "cdnDomain": "sdk.openui5.org",
+    "defaultTheme": "sap_horizon",
+    "qunitCoverageFile": "qunit-coverage-istanbul.js",
+    "setupCompleted": true
+  }
+}
