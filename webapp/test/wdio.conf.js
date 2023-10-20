@@ -37,6 +37,17 @@ exports.config = {
 	exclude: [
 		// 'path/to/excluded/files'
 	],
+	suites: {
+        unit: [
+            './unit/*.test.js'
+        ],
+        integration: [
+            './integration/*.test.js'
+        ],
+        e2e: [
+            './e2e/*.test.js'
+        ],
+    },
 	//
 	// ============
 	// Capabilities

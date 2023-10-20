@@ -14,12 +14,12 @@
 		"start:dist-cdn": "npm run start-cdn -- --config ui5-dist.yaml",
 		"lint": "eslint webapp",
 		"_start": "ui5 serve --port 8080",
-		"_test": "wait-on tcp:8080 & run-p test:*",
+		"_test": "wait-on tcp:8080 & run-p test:all",
 		"test": "run-p -r _start _test",
-		"test:unit": "wdio run ./webapp/test/unit/wdio.conf.unit.js",
-		"test:integration": "wdio run ./webapp/test/integration/wdio.conf.integration.js",
-		"test:e2e": "npm run wdi5",
-		"wdi5": "wdio run ./webapp/test/e2e/wdio.conf.e2e.js"
+		"test:all": "wdio run ./webapp/test/wdio.conf.js",
+		"test:unit": "wdio run ./webapp/test/wdio.conf.js --suite unit",
+		"test:integration": "wdio run ./webapp/test/wdio.conf.js --suite integration",
+		"test:e2e": "wdio run ./webapp/test/wdio.conf.js --suite e2e"
 	},
 	"devDependencies": {
 		"@ui5/cli": "^3.6.1",
